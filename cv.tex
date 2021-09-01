@@ -1,0 +1,232 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+	{\Huge \scshape Ryan Deering} \\ \vspace{4pt}
+	\small \raisebox{-0.1\height}\faPhone\ +353862561178 ~ \href{mailto:ryandeering1@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ryandeering1@gmail.com}} ~ 
+	\href{https://www.linkedin.com/in/ryandeering/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/ryandeering}}  ~
+	\href{https://github.com/ryandeering}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/ryandeering}}
+	\vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University}{Sep. 2017 -- May 2021}
+{Bachelor of Science (Honours) in Computing with Software Development}{Technological University Dublin - Tallaght Campus}
+\item {First Class Honours, 3.67 GPA. Grades and modules taken can be provided upon request.}
+\resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+%\resumeSubHeadingListStart
+\begin{multicols}{4}
+	\begin{itemize}[itemsep=-5pt, parsep=3pt]
+		\item\small Data Structures
+		\item Software Methodology
+		\item Data Analysis
+		\item Database Administration
+		\item Artificial Intelligence
+		\item Networking
+		\item Containerization 
+		\item Cloud Infrastructure
+	\end{itemize}
+\end{multicols}
+\vspace*{1.6\multicolsep}
+%\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Department of Social Protection}{February 2020 -- August 2020}
+{Performance Engineer Intern}{Dublin, Ireland}
+\resumeItemListStart
+\resumeItem{Provided reports of systems performance to team lead on a daily basis.}
+\resumeItem{Developed, delivered and deployed performance monitoring projects to great internal popularity among ICT leadership.}
+\resumeItem{Flagged issues with critical customer-facing web services to teams responsible.}
+\resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{fotostor. - 4th Year Project} $|$ \emph{.NET 5, Blazor, IdentityServer, Selenium, Azure Pipelines}}{October 2020 - April 2021}
+\resumeItemListStart
+\resumeItem{Solo project developed over six months. Social network aimed towards artists with e-commerce features.}
+\resumeItem{Developed back-end API and front-end utilizing .NET Core Web API and Blazor WebAssembly web framework.}
+\resumeItem{Highlighted functionality includes the uploading of images to a Google Cloud bucket, use of Stripe to process payments, IdentityServer to authenticate requests.}
+\resumeItem{Hosted on Azure App Services and Static Web Apps using Azure Pipelines. An 'A' grade was awarded.}
+\resumeItemListEnd
+\vspace{-12pt}
+\resumeProjectHeading
+{\textbf{DEASP Grafana Dashboards} $|$ \emph{Grafana, WebPageTest, JavaScript, ElasticSearch, InfluxDB}}{March 2020 - July 2020}
+\resumeItemListStart
+\resumeItem{Developed dashboards to query the web performance of essential DEASP-managed services in response to COVID-19 pandemic.}
+\resumeItem{Proved to be internally popular, utilized WebPageTest API to query local server to collect performance metrics and store in a time-series database. Metrics queried and visualized with Grafana, graphs emailed daily to team leads. }
+\resumeItem{Developed dashboards to scan and graph the HTTP codes and methods of internal IIS logs. Processed once a day by Logstash and stored in an ElasticSearch shard.}
+\resumeItem{Configured and containerized with Docker to run on a Windows instance.}
+\resumeItemListEnd 
+\vspace{-12pt}
+\resumeProjectHeading
+{\textbf{Game Shop Project - 2nd Year Project} $|$ \emph{Java, Play Framework}}{January - April 2019}
+\resumeItemListStart
+\resumeItem{Team project of two developed over three months. E-commerce application based on a video game store.}
+\resumeItem{Worked with Play Framework to handle frontend and Ebean to handle persistence of models in database.}
+\resumeItem{Implemented object-oriented programming practices such as inheritance and polymorphism for different types of accounts and products.} 				    
+\resumeItem{Handled functionality such as a login system for accounts with password hashing, image uploading, adding reviews to products, and an admin panel for the addition of products, accounts and to create statistics based on products bought. }
+\resumeItemListEnd 
+\resumeSubHeadingListEnd
+\vspace{-8pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Languages}{: C\verb|#|, Java, Python, C++,  HTML/CSS, JavaScript, SQL, Scala} \\
+		\textbf{Developer Tools}{: Visual Studio 2019, IntelliJ Idea, Google Cloud Platform, Microsoft Azure, Android Studio} \\
+		\textbf{Technologies/Frameworks}{:  .NET, Blazor, Linux, Docker, Git, Microsoft TFS, xUnit, jUnit, Play Framework} \\
+	}}
+\end{itemize}
+\vspace{-8pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+\resumeSubHeadingListStart
+\resumeSubheading{Class Representative}{Sept 2017 -- May 2021}{}{}
+\vspace{-5pt}
+\resumeItemListStart
+\resumeItem{Acted as a medium of communication between classmates and college faculty.}
+\resumeItem{Represented opinions, concerns of classmates at bimonthly Class Representative meetings.}
+\resumeItem{Often sought to resolve areas of conflict and worries of classmates and the programme/faculty. }
+\resumeItemListEnd
+       
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading{Coder Dojo Teacher -- General Committee Member of the Computing Society}{Sept 2017 -- May 2017}{}{}
+\resumeItemListStart
+\resumeItem{Assisted running a Coder Dojo every second Saturday in 1st year of my degree with the Computing Society.}
+\resumeItem{Helped teach Python and JavaScript to young children, introducing them to basic software programming concepts.}
+\resumeItem{Aided Computing Society committee and helped put forward ideas on events to run.}
+\resumeItemListEnd
+       
+\resumeSubHeadingListEnd
+
+
+\end{document}
