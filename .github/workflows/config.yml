@@ -12,11 +12,11 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: cv.tex
+          root_file: RyanDeeringCV.tex
       - name: Test
-        run: cat cv.pdf
+        run: cat RyanDeeringCV.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: cv.pdf
+          files: RyanDeeringCV.pdf
