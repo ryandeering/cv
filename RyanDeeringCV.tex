@@ -17,19 +17,6 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -117,7 +104,7 @@
 \vspace{1pt}
 \section{Introduction}
 \resumeSubHeadingListStart
-\item {I'm a software developer who specialises in .NET Core and .NET Framework. I have industry experience with SQL, REST APIs and software design. I have strong interpersonal skills and I like to keep up to date with the latest happenings within the .NET space and like to develop ideas I have for projects at home whenever possible. }
+\item {I'm a software developer specialising in .NET and Vue, with industry experience in SQL, REST API design and integration, Docker, microservices, and software architecture. I have strong interpersonal skills and stay engaged with developments in the .NET ecosystem, regularly working on personal projects to explore new ideas and technologies.}
 \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
@@ -151,15 +138,31 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
+\vspace{5pt}
+\resumeSubheading
+  {Circit}{August 2022 -- Present}
+  {Software Developer}{Dublin, Ireland}
+\resumeItemListStart
+
+\resumeItem{Full-stack development and maintenance of Circit's suite of products, covering both monolith-based core application and our newer microservices-based Open Banking ETL system (C\#/.NET Core, Vue.js). Quickly picked up new technologies and consistently delivered improvements.}
+\resumeItem{Developed internal tooling using Python and Azure Functions to automate routine tasks, such as generating release notes and streamlining localisation processes, reducing manual workloads for developers. Integrated Grafana dashboards with metrics from Azure Application Insights for visibility and reporting.}
+\resumeItem{Provided critical support on high-stakes migration and infrastructure project under pressure, gaining substantial experience with distributed systems, Docker, and Azure.}
+\resumeItem{Integrated and troubleshooted multiple international banking APIs, navigating unclear documentation and effectively resolving Open Banking region-specific issues.}
+\resumeItem{Collaborated within a fully remote team, independently managing shifting priorities and production issues; consistently recognised for clear communication and dependable performance.}
+\resumeItem{Learnt and mastered new technologies quickly, consistently making valuable contributions even under tight deadlines.}
+\resumeItemListEnd
+\vspace{5pt}
+
 
 \resumeSubheading
-{Retail inMotion}{September 2021 -- }
+{Retail inMotion}{September 2021 -- August 2022}
 {Junior .NET Developer}{Dublin, Ireland}
 \resumeItemListStart
 \resumeItem{Full-stack development and maintenance of Point of Sale systems \& APIs in the vPOS Control team. Following Agile methodology, working closely with six other team members and principal software engineer to accommodate various business requirements for numerous different airline clients.}
 \resumeItem{Delivered key features to important projects in a legacy system under pressure.}
 \resumeItem{Contributed to DSFinV‑K and TSE German tax reporting standard implementations through creating SQL stored procedures and new ASP.NET web pages.}
 \resumeItem{Actively working on migrating business logic and endpoints from SQL stored procedures to .NET Core Web API and EF Core 6 with unit tests to accompany them. }
+\vspace{5pt}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -170,14 +173,32 @@
 \resumeItem{Developed, delivered and deployed performance monitoring projects to great internal popularity among ICT leadership. Followed Agile Methodology for development and used Azure DevOps Server for version control.}
 \resumeItem{Flagged issues with critical customer-facing web services to teams responsible.}
 \resumeItemListEnd
-\vspace{-5pt}    
+\vspace{5pt}    
 \resumeSubHeadingListEnd
-\vspace{-10pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
 \vspace{-5pt}
 \resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Fallout 1 + 2 Nintendo Switch Homebrew Ports} $|$ \emph{C++, SDL2, Devkitpro, libnx}}{July 2024 --}
+\resumeItemListStart
+\resumeItem{Community Edition ports of Fallout 1 and Fallout 2 to the Nintendo Switch as homebrew software. Developed using C++ and SDL2.}
+\resumeItem{Reviewed and modified upstream codebases to build on the Switch, addressing rendering, input, and file system handling via homebrew SDKs.}
+\resumeItem{Personal passion project to bring classic CRPGs to a portable platform. Publicly available at:}
+\resumeItem{\href{https://github.com/ryandeering/fallout-ce-switch}{github.com/ryandeering/fallout-ce-switch} and \href{https://github.com/ryandeering/fallout2-ce-switch}{github.com/ryandeering/fallout2-ce-switch}}
+\resumeItemListEnd
+\vspace{-12pt}
+\resumeProjectHeading
+{\textbf{Circit Open Banking ETL Platform} $|$ \emph{.NET 8, Azure Functions, DuckDB, Azure Queue Storage}}{June 2024 --}
+\resumeItemListStart
+\resumeItem{Assisted in developing a robust ETL (Extract, Transform, Load) system for integrating with 100+ international banks through various Open Banking protocols including PSD2, XS2A, UK Open Banking.}
+\resumeItem{Implemented and troubleshooted API integrations for banks including Deutsche Bank, JP Morgan, HSBC, and many others, handling account information, balances, and transaction data.}
+\resumeItem{Assisted high-performance data processing pipeline using Azure Functions for orchestration and DuckDB for efficient data transformation and analysis.}
+\resumeItem{Designed a modular architecture with abstracted interfaces enabling easy integration of new banking providers and protocols with minimal code changes.}
+\resumeItem{Developed a comprehensive data quality assurance system for financial data validation, integrating automated checks for transaction integrity, balance accuracy, and data completeness to ensure reliability of banking data processing.}
+\resumeItemListEnd
+\vspace{-12pt}
 \resumeProjectHeading
 {\textbf{Dublin Airport Security Times Twitter Bot} $|$ \emph{Python3, InfluxDB, Matplotlib, BeautifulSoup, Tweepy }}{May 2022 --}
 \resumeItemListStart
@@ -194,53 +215,38 @@
 \resumeItem{Highlighted functionality includes the uploading of images to a Google Cloud bucket, use of Stripe to process payments, IdentityServer to authenticate requests.}
 \resumeItem{Hosted on Azure App Services and Static Web Apps using Azure Pipelines. An 'A' grade was awarded.}
 \resumeItemListEnd
-\vspace{-12pt}
-\resumeProjectHeading
-{\textbf{DEASP Grafana Dashboards} $|$ \emph{Grafana, WebPageTest, JavaScript, ElasticSearch}}{March 2020 -- July 2020}
-\resumeItemListStart
-\resumeItem{Developed dashboards to query the web performance of essential DEASP-managed services in response to COVID-19 pandemic.}
-\resumeItem{Proved to be internally popular, utilized WebPageTest API to query local server to collect performance metrics and store in a time-series database. Metrics queried and visualised with Grafana, graphs emailed daily to team leads. }
-\resumeItem{Developed dashboards to scan and graph the HTTP codes and methods of internal IIS logs. Processed once a day by Logstash and stored in an ElasticSearch shard.}
-\resumeItem{Configured and containerized with Docker to run on a Windows instance.}
-\resumeItemListEnd 
-\vspace{-4pt}
 \resumeSubHeadingListEnd
-
-
 %
-%-----------PROGRAMMING SKILLS-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
+\vspace{2pt}
 \begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-		\textbf{Languages}{: C\verb|#|, SQL, HTML/CSS, JavaScript, PowerShell, Java, Python, C++, Scala, Bash} \\
-		\textbf{Developer Tools}{: Visual Studio 2022, SQL Server Management Studio, Google Cloud Platform, Microsoft Azure} \\
-		\textbf{Technologies/Frameworks}{: .NET Core, .NET Framework, Blazor, Linux, Docker, Git, xUnit} \\
-	}}
+  \small{\item{
+    \textbf{Languages}{: C\#, TypeScript/JavaScript, SQL, Python, Java, C++, PowerShell} \\
+    \textbf{Technologies/Frameworks}{: .NET Core, Entity Framework Core, Microservices, Azure Functions, Blazor, Vue.js, Docker, Kubernetes, OAuth2, Azure Queue Storage, DuckDB, Linux, xUnit, Moq, Sentry, Grafana, Application Insights, LINQ, OpenAPI/Swagger, Bicep} \\
+    \textbf{Developer Tools}{: Visual Studio Code, VS2022, SQL Server Management Studio, Azure Data Studio, Postman, Azure Storage Explorer, Github Copilot, Git, GitHub, GitHub Actions, Docker/OrbStack, Microsoft Azure, Google Cloud Platform}
+  }}
 \end{itemize}
-\vspace{-13pt}
 
-
-%-----------INVOLVEMENT---------------
+%-----------LEADERSHIP / EXTRACURRICULAR-----------
 \section{Leadership / Extracurricular}
+\vspace{2pt}
 \resumeSubHeadingListStart
 \resumeSubheading{Class Representative}{Sept 2017 -- May 2021}{}{}
 \vspace{-15pt}
 \resumeItemListStart
-\resumeItem{Acted as a medium of communication between classmates and college faculty.}
-\resumeItem{Represented opinions, concerns of classmates at bimonthly Class Representative meetings.}
-\resumeItem{Often sought to resolve areas of conflict and worries of classmates and the programme/faculty. }
+\resumeItem{Liaised between classmates and faculty, voicing concerns at bimonthly meetings.}
+\resumeItem{Mediated conflicts and addressed student issues with staff.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-\vspace{-15pt}
+\vspace{-8pt}
 \resumeSubHeadingListStart
 \resumeSubheading{Coder Dojo Teacher -- General Committee Member of the Computing Society}{Sept 2017 -- May 2018}{}{}
 \vspace{-15pt}
 \resumeItemListStart
-\resumeItem{Assisted running a Coder Dojo every second Saturday in 1st year of my degree with the Computing Society.}
-\resumeItem{Helped teach Python and JavaScript to young children, introducing them to basic software programming concepts.}
-\resumeItem{Aided Computing Society committee and helped put forward ideas on events to run.}
+\resumeItem{Assisted running Coder Dojo sessions, teaching Python and JavaScript to children.}
+\resumeItem{Contributed event ideas and supported society activities.}
 \resumeItemListEnd
-       
 \resumeSubHeadingListEnd
 
 %-----------HOBBIES AND INTERESTS-----------
@@ -248,13 +254,13 @@
 \section{Hobbies and Interests}
 
 \resumeItemListStart
-\resumeItem{I'm an amateur analog photographer: I shoot on Polaroid 600, 35mm and medium format cameras. I also like to collect cameras of those formats and develop my photographs by myself when possible.}
+\vspace{2pt}
+\resumeItem{I'm an analog photographer: I shoot on Polaroid 600, 35mm and medium format cameras. I also like to collect cameras of those formats and develop my photographs by myself when possible.}
 \vspace{-2pt}
 \resumeItem{I'm extremely passionate about music, I like to buy vinyl records and travel to see my favourite bands if they're not playing Ireland. I try to be familiar of the Irish alternative music scene as much as I can. }
 \vspace{-2pt}
-\resumeItem{A big reader, I'm also heavily invested in Republic of Ireland soccer through the domestic game and the national team. }
+\resumeItem{A big reader, I'm also heavily invested in League of Ireland soccer through following my local team, St Patrick's Athletic. }
 \vspace{-2pt}
 \resumeItemListEnd
-
 
 \end{document}
